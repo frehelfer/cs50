@@ -1,0 +1,43 @@
+sort1 uses: Bubble Sort
+
+How do you know?: Because this algorithm had a great time testing against sorted50000.txt and a bad
+ time against reversed50000, both results makes sense comparing to the best-case and worst-case of
+ the Bubble Sort algorithm.
+
+sort2 uses: Merge Sort
+
+How do you know?: Because it's the fastest algorithm in all situations and it was really fast
+testing on random50000.txt, beating all the other by far.
+
+sort3 uses: Selection Sort
+
+How do you know?: This algorithms needs to find the smallest number passing trough all the numbers
+before act swaping to sort it. So it makes sense that it needs more time to do the sorted50000.txt test.
+
+
+
+
+sorted5000
+sort1 -real    0m0.044s
+sort2 -real    0m0.030s
+sort3 -real    0m0.048s
+
+sorted50.000
+sort1 -real    0m0.858s
+sort2 -real    0m0.773s
+sort3 -real    0m3.444s
+
+random50.000
+sort1 -real    0m7.828s
+sort2 -real    0m0.865s
+sort3 -real    0m3.465s
+
+reserverd10.000
+sort1 -real    0m0.276s
+sort2 -real    0m0.088s
+sort3 -real    0m0.170s
+
+reversed50.000
+sert1 -real    0m5.838s
+sort2 -real    0m0.964s
+sort3 -real    0m3.584s
