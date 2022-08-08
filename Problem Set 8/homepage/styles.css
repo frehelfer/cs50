@@ -1,0 +1,19 @@
+header {
+    margin: 2rem;
+}
+
+article {
+    margin: 50px
+}
+
+h1 {
+    text-align: center;
+    margin: 10px;
+}
+
+.carousel {
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    border-radius: 10px;
+}

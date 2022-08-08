@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>Who was John Bonham?</h3>
+                <h4 id="answerOne">=</h4>
+
+                <button id="btn1">A Politician</button>
+                <button id="btn2">A Musician</button>
+                <button id="btn3">A Drug Dealer</button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>What's the name of the first Harry Potter's Book?</h3>
+                <h4 id="answerTwo">=</h4>
+
+                <input id="input">
+                <button id="btn4">Check Answer</button>
+
+            </div>
+        </div>
+    </body>
+    <script>
+        const answerOne = document.querySelector('#answerOne');
+        const answerTwo = document.querySelector('#answerTwo');
+
+        const btn1 = document.querySelector('#btn1');
+        const btn2 = document.querySelector('#btn2');
+        const btn3 = document.querySelector('#btn3');
+        const btn4 = document.querySelector('#btn4');
+
+        const input = document.querySelector('#input');
+
+        btn1.addEventListener('click', function (e) {
+            answerOne.innerText = 'Incorrect';
+            e.target.style.background = 'red';
+        })
+
+        btn2.addEventListener('click', function (e) {
+            answerOne.innerText = 'Correct!';
+            e.target.style.background = 'green';
+        })
+
+        btn3.addEventListener('click', function (e) {
+            answerOne.innerText = 'Incorrect';
+            e.target.style.background = 'red';
+        })
+
+
+        btn4.addEventListener('click', function () {
+            if (input.value == "Harry Potter and the Sorcerer's Stone") {
+                answerTwo.innerText = 'Correct!';
+                input.style.background = 'green';
+            } else {
+                answerTwo.innerText = 'Incorrect';
+                input.style.background = 'red';
+            }
+        })
+
+
+        // <!-- Harry Potter and the Sorcerer's Stone -->
+    </script>
+</html>
